@@ -1,0 +1,128 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Kids T-Shirt",
+      "category": "Clothing",
+      "price": 15.99,
+      "size": "M",
+      "color": "Red",
+      "brand": "Kiddo",
+      "popularity": 4,
+      "image": "https://source.unsplash.com/150x150/?kid,t-shirt"
+    },
+    {
+      "id": "2",
+      "name": "Kids Sneakers",
+      "category": "Footwear",
+      "price": 29.99,
+      "size": "L",
+      "color": "Blue",
+      "brand": "TinyFeet",
+      "popularity": 5,
+      "image": "https://source.unsplash.com/150x150/?kid,sneakers"
+    },
+    {
+      "id": "3",
+      "name": "Kids Backpack",
+      "category": "Accessories",
+      "price": 19.99,
+      "size": "One Size",
+      "color": "Green",
+      "brand": "BackpackBuddies",
+      "popularity": 3,
+      "image": "https://source.unsplash.com/150x150/?kid,backpack"
+    },
+    {
+      "id": "4",
+      "name": "Kids Hat",
+      "category": "Accessories",
+      "price": 9.99,
+      "size": "S",
+      "color": "Yellow",
+      "brand": "SunnyDay",
+      "popularity": 4,
+      "image": "https://source.unsplash.com/150x150/?kid,hat"
+    },
+    {
+      "id": "5",
+      "name": "Kids Shorts",
+      "category": "Clothing",
+      "price": 12.99,
+      "size": "M",
+      "color": "Purple",
+      "brand": "ShortStuff",
+      "popularity": 3,
+      "image": "https://source.unsplash.com/150x150/?kid,shorts"
+    },
+    {
+      "id": "6",
+      "name": "Kids Jacket",
+      "category": "Clothing",
+      "price": 39.99,
+      "size": "L",
+      "color": "Orange",
+      "brand": "CozyKids",
+      "popularity": 5,
+      "image": "https://source.unsplash.com/150x150/?kid,jacket"
+    },
+    {
+      "id": "7",
+      "name": "Kids Sunglasses",
+      "category": "Accessories",
+      "price": 8.99,
+      "size": "One Size",
+      "color": "Black",
+      "brand": "BrightEyes",
+      "popularity": 4,
+      "image": "https://source.unsplash.com/150x150/?kid,sunglasses"
+    },
+    {
+      "id": "8",
+      "name": "Kids Sandals",
+      "category": "Footwear",
+      "price": 19.99,
+      "size": "M",
+      "color": "Pink",
+      "brand": "LittleFeet",
+      "popularity": 3,
+      "image": "https://source.unsplash.com/150x150/?kid,sandals"
+    },
+    {
+      "id": "9",
+      "name": "Kids Toy Car",
+      "category": "Toys",
+      "price": 14.99,
+      "size": "One Size",
+      "color": "Red",
+      "brand": "ToyTown",
+      "popularity": 5,
+      "image": "https://source.unsplash.com/150x150/?kid,toy-car"
+    },
+    {
+      "id": "10",
+      "name": "Kids Puzzle",
+      "category": "Toys",
+      "price": 12.99,
+      "size": "One Size",
+      "color": "Multi",
+      "brand": "PuzzleFun",
+      "popularity": 4,
+      "image": "https://source.unsplash.com/150x150/?kid,puzzle"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "shraddha",
+      "email": "s@gmail.com",
+      "password": "password123"
+    },
+    {
+      "id": "c672",
+      "username": "aaru",
+      "email": "a@gmail.com",
+      "password": "123"
+    }
+  ]
+}
