@@ -1,13 +1,14 @@
+// Register.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Register = () => {
+const Register = ({ setUser }) => {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
     password: '',
   });
-  const [registeredUser, setRegisteredUser] = useState(null);
+  const [error, setError] = useState(null);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -18,7 +19,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3001/users', {
+      const response = await fetch('http://localhost:3000/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -27,19 +28,22 @@ const Register = () => {
       });
       if (response.ok) {
         const user = await response.json();
-        setRegisteredUser(user);
+        setUser(user);
         navigate('/');
       } else {
-        console.error('Failed to register user:', response.statusText);
+        const errorData = await response.json();
+        setError(errorData.message);
       }
     } catch (error) {
       console.error('Failed to register user:', error.message);
+      setError('Failed to register user. Please try again later.');
     }
   };
 
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Register</h1>
+      {error && <div className="text-red-500 mb-4">{error}</div>}
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label>Username</label>

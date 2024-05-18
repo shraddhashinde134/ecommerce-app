@@ -123,6 +123,18 @@
       "username": "aaru",
       "email": "a@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "b5d3",
+      "username": "user",
+      "email": "user@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "befe",
+      "username": "tina",
+      "email": "tina@gmail.com",
+      "password": "123"
     }
   ]
 }

@@ -6,6 +6,7 @@ import { selectCartItemCount } from '../features/cart/cartSlice';
 
 const Header = ({ user }) => {
   const cartItemCount = useSelector(selectCartItemCount);
+  
 
   return (
     <header className="bg-gray-800 p-4 text-white flex justify-between items-center">

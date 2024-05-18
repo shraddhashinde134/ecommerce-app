@@ -13,8 +13,11 @@ import OrderConfirmation from './features/checkout/OrderConfirmation';
 import Register from './registration/Register';
 import Header from './Layout/Header';
 import Footer from './Layout/Footer';
+import { useState } from 'react';
 
 function App() {
+  const [registeredUser, setRegisteredUser] = useState(null);
+
   return (
     <>
     <Provider store={store}>
@@ -27,7 +30,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/order-confirmation" element={<OrderConfirmation />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/register" element={<Register setUser={setRegisteredUser} />} />
           </Routes>
         </div>
         <Footer />
