@@ -16,7 +16,7 @@ import Footer from './Layout/Footer';
 import { useState } from 'react';
 
 function App() {
-  const [registeredUser, setRegisteredUser] = useState(null);
+  
 
   return (
     <>
@@ -30,7 +30,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/order-confirmation" element={<OrderConfirmation />} />
-            <Route path="/register" element={<Register setUser={setRegisteredUser} />} />
+            <Route path="/register" element={<Register  />} />
           </Routes>
         </div>
         <Footer />

@@ -1,8 +1,7 @@
-// Register.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Register = ({ setUser }) => {
+const Register = () => {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -18,6 +17,8 @@ const Register = ({ setUser }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError(null); // Reset error state
+
     try {
       const response = await fetch('http://localhost:3000/users', {
         method: 'POST',
@@ -26,16 +27,18 @@ const Register = ({ setUser }) => {
         },
         body: JSON.stringify(formData),
       });
+
+      const responseData = await response.json();
+
       if (response.ok) {
-        const user = await response.json();
-        setUser(user);
+        console.log('User registered successfully:', responseData);
         navigate('/');
       } else {
-        const errorData = await response.json();
-        setError(errorData.message);
+        console.error('Server error:', responseData);
+        setError(responseData.message || 'Failed to register user.');
       }
     } catch (error) {
-      console.error('Failed to register user:', error.message);
+      console.error('Network error:', error);
       setError('Failed to register user. Please try again later.');
     }
   };
